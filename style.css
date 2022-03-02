@@ -1,0 +1,126 @@
+header{
+	background: #BBBBBB;
+	padding: 20px;/* Espaçamento interno - Tudo dentro dele esteja neste limite (margem e conteúdo) */
+}
+.caixa{
+	position: relative; /* Informando que a caixa terá posicionamento relativo  */
+	width: 940px; /* Largura padrão da internet */
+	margin: 0 auto; /* Em cima e embaixo será zero, e esquerda e direita são auto */
+}
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+nav a:hover{ /* Pegando o link do nav a (hover = mouse por cima) dentro dos links de navegação */
+	color: #ADEAEA;
+	text-decoration: underline; /* Sublinhado quando o mouse tiver por cima do link de navegação */
+} 
+nav li{
+	display: inline; 
+	margin: 0 0 0 15px;
+}
+.produtos{ /* Trabalhando com a classe produto */
+	width: 940px; /* Definindo o limite da largura*/
+	margin: 0 auto; /* Margem de cima e baixo 0, laterrais automáticas */
+	padding: 50px 0; /* Padding interno de 50 px em cima e embaixo */
+}
+.produtos li{ /* Trabalhando com os itens da classe produtos */
+	display: inline-block; /* Colocando os itens em inlineblock */
+	text-align: center; /* Centralizando */
+	width: 30%; /* Pedindo que cada li ocupe 30% da largura total*/
+	vertical-align: top; /* Alinhando tudo na vertical (de cima)*/
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box; /* Definindo que o padding não se somará e quebrará meus elementos, e sim se adaptar a ele */
+	border: 2px solid #38B0DE;
+	border-radius: 10px 10px 10px 50px;
+}
+.produtos li:hover{ /* mouse passando por cima*/
+	border-color: #ADEAEA;
+}
+.produtos li:active{ /* Mouse pressionado muda a cor */
+	border-color: #3299CC;
+}
+.produtos li:hover h2{ /* Quero o h2 quando o  mouse tiver por cima uma nova fonte */
+	font-size: 35px;
+}
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+.produto-descricao{
+	font-size: 18px;
+}
+.produto-preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0 ; /*  */ 
+}
+footer{
+	text-align: center;
+	background: url("bg.jpg"); /* */
+	padding: 40px 0;
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+main{
+	width: 940px;
+	margin: 0 auto;
+}
+form{
+	margin: 40px 0;
+}
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+.input-padrao{
+	display: block;
+	margin: 0 0 10px;
+	padding: 10px 25px;
+	width: 50%;
+}
+.checkbox{
+	margin: 20px 0;
+}
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all; /* Definindo que a transição do hover demore mais */
+}
+.enviar:hover {
+	background: darkseagreen;
+	transform: scale(1.1); /* Ele aumenta 10%, novidade do css 3 */
+}
+table {
+	margin: 20px 0 40px; /* Espaçamento interno */
+}
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+td, th{
+	border:  1px solid #000000;
+	padding: 8px 15px;
+}
